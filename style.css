@@ -1,0 +1,195 @@
+body {
+  background-color: black;
+
+  /* default text settings */
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  color: white;
+
+  /* TODO: responsiveness */
+  min-width: 1000px;
+
+  margin-top: 68px;
+  margin-right: 120px;
+  margin-bottom: 40px;
+  margin-left: 120px;
+}
+
+.col {
+  float: left;
+  width: 50%;
+}
+
+h1 {
+  /* Type weight 100-900 in 100 increments; Medium is 500: http://www.webtype.com/info/articles/fonts-weights/ */
+  font-weight: 700;
+  font-size: 40px;
+  letter-spacing: -2px;
+
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+p {
+  line-height: 1.5;
+  margin-bottom: 14px;
+}
+
+header p {
+  font-weight: 500;
+  font-size: 100%;
+  line-height: 1.5;
+  max-width: 465px;
+}
+
+footer p {
+  font-weight: 500;
+  font-size: 75%;
+  line-height: 1.25;
+
+  margin-top: 60px;
+  margin-bottom: 30px;
+}
+
+a {
+  color: white;
+}
+
+.lang {
+  position: absolute;
+  top: 34px;
+  right: 34px;
+
+  font-weight: 700;
+  font-size: 11px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.nav, .label {
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+.label {
+  font-weight: 700;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+li {
+  float: left;
+}
+
+.nav li {
+  margin-right: 40px;
+}
+
+.lang li {
+  margin-right: 10px;
+}
+
+li a {
+  text-decoration: none;
+  opacity: 0.5;
+}
+
+.selected a {
+  opacity: 1;
+}
+
+.selected {
+  font-weight: 700;
+  border-bottom-style: solid;
+  border-width: 3px;
+
+  padding-bottom: 6px;
+}
+
+.venn {
+  position: relative;
+  /* "native" resolution: 800x760px; */
+  width: 465px;
+  height: 442px;
+
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.circle {
+  position: absolute;
+  width: 62.5%;
+  height: 65.789%;
+  transform: translate(-50%, -50%);
+  
+  border-radius: 50%;
+  mix-blend-mode: lighten;
+}
+
+.circle#top {
+  top: 32.895%;
+  left: 50%;
+
+  background-color: #F0C;
+}
+
+.circle#right {
+  top: 67.105%;
+  left: 68.75%;
+
+  background-color: #CF0;
+}
+
+.circle#left {
+  top: 67.105%;
+  left: 31.25%;
+
+  background-color: #0CF;
+}
+
+.venn .label {
+  color: black;
+
+  /* align horizontally */
+  text-align: center;
+
+  /* align vertically */
+  position: absolute;
+}
+
+.circle#top .label {
+  width: 100%;
+  top: 35%;
+}
+
+.circle#right .label {
+  width: 60%;
+  right: 0;
+  top: 50%;
+}
+
+.circle#left .label {
+  width: 60%;
+  top: 50%;
+}
+
+/* There is no way to extend the gradient (unlike solid colors) beyond the viewport to the white browser scroll bounce background. */
+#stripe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 8px;
+
+  background-image: -webkit-linear-gradient(left, #F0C, #CF0, #0CF);
+  background-image: -moz-linear-gradient(left, #F0C, #CF0, #0CF);
+  background-image: -o-linear-gradient(left, #F0C, #CF0, #0CF);
+  background-image: linear-gradient(to right, #F0C, #CF0, #0CF);
+}
