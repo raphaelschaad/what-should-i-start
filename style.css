@@ -47,6 +47,8 @@ footer p {
   font-size: 75%;
   line-height: 1.25;
 
+  opacity: 0.5;
+
   margin-top: 60px;
   margin-bottom: 30px;
 }
