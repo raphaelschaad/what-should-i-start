@@ -103,6 +103,10 @@ li a {
   opacity: 0.5;
 }
 
+li a:hover {
+  opacity: 1;
+}
+
 .selected a {
   opacity: 1;
 }
